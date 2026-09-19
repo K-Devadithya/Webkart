@@ -28,23 +28,15 @@ body {
     color: black;
 }
 
-.button * {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    width: 130px;
-    color: aliceblue;
-    background-color: brown;
-    text-align: center;
-    border-radius: 8px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    height: 20px;
-}
-
 .nav-bar * {
     text-decoration: none;
+}
+.nav-bar nav *{
+    background-color: rgb(236, 135, 52);
+    border-radius: 10px;
+    color: aliceblue;
+    gap: 20px;
+    font-size: 10px;
 }
 
 .Hero {
@@ -56,32 +48,83 @@ body {
     height: calc(100vh -80px);
     min-height: 600px;
     background: linear-gradient(rgba(255, 255, 253, 0.5), rgba(252, 227, 5, 0.5)), url("./images/bg.jpeg");
-    background-size: ;
+    background-size: 1400px;
 }
 
+.button * {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 130px;
+    padding: 10px;
+    color: aliceblue;
+    background-color: brown;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+}
 .cat {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 30px 20px;
     margin-bottom: 40px;
+    background: linear-gradient(rgba(64, 201, 243, 0.795), rgba(252, 227, 5, 0.5));
 }
 
 .Cat-cards {
     display: flex;
     gap: 90px;
 }
-
-.deals {
+.cat-card img{
+    width: 110px;
+    height: 110px;
+    object-fit:contain;
+    border-radius: 12px;
+}
+.cat-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    color:brown;
+}
+.cat-card:hover{
+    transform: scale(1.05);
+}
+.deals{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 30px 20px;
     margin-bottom: 40px;
+    background: linear-gradient(rgba(255, 255, 253, 0.5), rgba(252, 227, 5, 0.5))
 }
 
 .deals-cards {
     display: flex;
     gap: 90px;
 }
+.deal-card img{
+    width: 110px;
+    height: 110px;
+    object-fit:contain;
+    border-radius: 12px;
+}
+.deal-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    color:brown;
+}
+.deal-card:hover{
+    transform: scale(1.05);
 }
